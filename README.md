@@ -1,11 +1,9 @@
 # 環境構築
 1. Node.js インストール
+* https://nodejs.org/ja/
 
-https://nodejs.org/ja/
-
-2. AWS CLI インストール
-
-https://qiita.com/Inon/items/c3c0116445883c088bb2
+2. AWS CLI インストール 
+* https://qiita.com/Inon/items/c3c0116445883c088bb2
 
 3. ServerlessFramework インストール
 ```
