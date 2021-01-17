@@ -1,0 +1,31 @@
+service: serverless-tutorial
+
+frameworkVersion: '2'
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  region: ap-northeast-1
+  stage: dev
+  apiGateway:
+    shouldStartNameWithService: true
+
+functions:
+  add:
+    handler: calc.add
+    events:
+      - http:
+          path: calc/add
+          method: post
+          cors: true
+  subtract:
+    handler: calc.subtract
+    events:
+      - http:
+          path: calc/subtract
+          method: post
+          cors: true
